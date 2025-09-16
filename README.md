@@ -1,135 +1,69 @@
 # Nikoloz Ebralidze - Portfolio Website
 
-A modern, responsive portfolio website built with Vue.js 3, showcasing front-end development skills and experience.
+🌐 **Live Website:** [https://DOnEbrala.github.io/Portfolio/](https://DOnEbrala.github.io/Portfolio/)
+
+## 👨‍💻 About
+
+Personal portfolio website showcasing my experience as a Front-end Developer. Built with modern technologies and best practices.
+
+## 🛠️ Technologies Used
+
+- **Vue.js 3** - Progressive JavaScript framework
+- **Vue Router** - Official router for Vue.js
+- **Vue i18n** - Internationalization (English/Georgian)
+- **Sass/SCSS** - CSS preprocessor
+- **Vite** - Fast build tool
+- **GitHub Pages** - Free hosting
 
 ## ✨ Features
 
-- **Modern Vue.js 3** with Composition API
-- **Vue Router** for smooth navigation
-- **Vue i18n** for internationalization (English/Georgian)
-- **Responsive Design** that works on all devices
-- **Modern UI/UX** with smooth animations and transitions
-- **Dark/Light Theme** support
-- **Performance Optimized** with lazy loading and code splitting
-- **SEO Friendly** with proper meta tags and structure
+- 🌙 **Dark/Light Mode** - Toggle between themes
+- 🌍 **Multilingual** - English and Georgian support
+- 📱 **Responsive Design** - Works on all devices
+- ⚡ **Fast Performance** - Optimized for speed
+- 🎨 **Modern UI/UX** - Clean and professional design
 
-## 🛠️ Tech Stack
+## 📄 Pages
 
-- **Frontend**: Vue.js 3, Vue Router, Vue i18n
-- **Styling**: Sass/SCSS with custom design system
-- **Build Tool**: Vite
-- **State Management**: Pinia
-- **Icons**: Font Awesome
-- **Fonts**: Inter (Google Fonts)
+- **Home** - Professional introduction and hero section
+- **Experience** - Work history, education, and certificates
+- **Contact** - Contact form and professional information
 
-## 🚀 Quick Start
+## 🚀 Local Development
 
-### Prerequisites
-- Node.js (v16 or higher)
-- npm or yarn
+```bash
+# Install dependencies
+npm install
 
-### Installation
+# Start development server
+npm run dev
 
-1. **Clone the repository**
-   ```bash
-   git clone <repository-url>
-   cd CV_Website
-   ```
+# Build for production
+npm run build
 
-2. **Install dependencies**
-   ```bash
-   npm install
-   ```
-
-3. **Start development server**
-   ```bash
-   npm run dev
-   ```
-
-4. **Build for production**
-   ```bash
-   npm run build
-   ```
-
-5. **Preview production build**
-   ```bash
-   npm run preview
-   ```
-
-## 📁 Project Structure
-
-```
-src/
-├── components/          # Reusable Vue components
-│   ├── layout/         # Layout components (Header, Footer)
-│   ├── sections/       # Page sections (Hero, About, etc.)
-│   └── ui/            # UI components (Buttons, Forms, etc.)
-├── views/              # Page components
-├── router/             # Vue Router configuration
-├── i18n/              # Internationalization files
-├── styles/            # Global styles and variables
-└── main.js           # Application entry point
+# Preview production build
+npm run preview
 ```
 
-## 🌍 Internationalization
+## 📞 Contact Information
 
-The website supports multiple languages:
-- **English** (default)
-- **Georgian** (ქართული)
+- **Email:** nikolozebralidze001@gmail.com
+- **Phone:** +995 551 143 154
+- **LinkedIn:** [nika-ebralidze](https://www.linkedin.com/in/nika-ebralidze/)
+- **GitHub:** [DOnEbrala](https://github.com/DOnEbrala)
 
-Language files are located in `src/i18n/locales/`.
+## 💼 Professional Experience
 
-## 🎨 Customization
+### Front End Developer @ BetSolutions (Nov 2023 - Present)
+- Vue.js, JavaScript, HTML5, CSS3
+- Vue Router, Pinia/Vuex, Vue i18n
+- Azure DevOps, Bootstrap
 
-### Colors
-Update the color scheme in `src/styles/variables.scss`:
-
-```scss
-$primary: #6366f1;      // Primary brand color
-$secondary: #f59e0b;    // Secondary accent color
-$dark: #1f2937;         // Dark text color
-$light: #f9fafb;        // Light background
-```
-
-### Content
-Update personal information in:
-- `src/i18n/locales/en.json` (English content)
-- `src/i18n/locales/ka.json` (Georgian content)
-- Individual Vue components for specific data
-
-## 📱 Responsive Design
-
-The website is fully responsive and optimized for:
-- **Mobile**: 320px - 767px
-- **Tablet**: 768px - 1023px
-- **Desktop**: 1024px and above
-
-## ⚡ Performance
-
-- **Lazy Loading**: Components and images are loaded on demand
-- **Code Splitting**: Automatic route-based code splitting
-- **Optimized Assets**: Images and fonts are optimized for web
-- **Modern Build**: Uses Vite for fast development and optimized builds
-
-## 🔧 Available Scripts
-
-- `npm run dev` - Start development server
-- `npm run build` - Build for production
-- `npm run preview` - Preview production build locally
-
-## 📄 License
-
-This project is open source and available under the [MIT License](LICENSE).
-
-## 👨‍💻 Developer
-
-**Nikoloz Ebralidze**
-- Portfolio: [Your Website]
-- LinkedIn: [Your LinkedIn]
-- GitHub: [Your GitHub]
-- Email: nikoloz@example.com
+### IT Engineer/Support @ ORIGIN (Apr 2019 - Jan 2022)
+- Hardware maintenance and PC assembly
+- Remote support (AnyDesk, TeamViewer)
+- Windows, Ubuntu, Linux administration
 
 ---
 
 Built with ❤️ using Vue.js
-
