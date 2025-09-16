@@ -1,0 +1,488 @@
+@import 'variables';
+
+// Reset and base styles
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: $font-family;
+  font-size: $font-size-base;
+  line-height: 1.6;
+  color: $dark;
+  background-color: $white;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  transition: background-color $transition, color $transition;
+}
+
+// Dark theme styles
+[data-theme="dark"] {
+  body {
+    background-color: #1a1a1a;
+    color: #e5e5e5;
+  }
+  
+  // Update text colors for dark theme
+  h1, h2, h3, h4, h5, h6 {
+    color: #ffffff;
+  }
+  
+  p {
+    color: #b3b3b3;
+  }
+  
+  // Update card backgrounds
+  .card {
+    background: #2d2d2d;
+    color: #e5e5e5;
+  }
+  
+  // Update header
+  .header {
+    background: rgba(26, 26, 26, 0.95);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  }
+  
+  // Update navigation links
+  .nav-link {
+    color: #e5e5e5;
+    
+    &:hover,
+    &.router-link-active {
+      color: $primary;
+    }
+  }
+  
+  // Update form elements
+  input,
+  textarea {
+    background: #2d2d2d;
+    border-color: #404040;
+    color: #e5e5e5;
+    
+    &::placeholder {
+      color: #888888;
+    }
+    
+    &:focus {
+      border-color: $primary;
+    }
+  }
+  
+  // Update project cards
+  .project-card {
+    background: #2d2d2d;
+    
+    .project-content {
+      h3 {
+        color: #ffffff;
+      }
+      
+      p {
+        color: #b3b3b3;
+      }
+    }
+  }
+  
+  // Update stat cards
+  .stat-card {
+    background: #2d2d2d;
+    
+    .stat-number {
+      color: $primary;
+    }
+    
+    .stat-label {
+      color: #b3b3b3;
+    }
+  }
+  
+  // Update skill cards
+  .skill-card {
+    background: #2d2d2d;
+    
+    h3 {
+      color: #ffffff;
+    }
+  }
+  
+  // Update timeline content
+  .timeline-content {
+    background: #2d2d2d;
+    
+    .job-header {
+      h3 {
+        color: $primary;
+      }
+      
+      .company {
+        color: #ffffff;
+      }
+      
+      .duration {
+        color: #b3b3b3;
+      }
+    }
+    
+    .achievements li {
+      color: #b3b3b3;
+    }
+  }
+  
+  // Update contact form
+  .contact-form-wrapper {
+    background: #2d2d2d;
+  }
+  
+  // Update footer
+  .footer {
+    background: #111111;
+  }
+  
+  // Update filter buttons
+  .filter-btn {
+    border-color: #404040;
+    color: #b3b3b3;
+    
+    &:hover,
+    &.active {
+      background: $primary;
+      color: $white;
+      border-color: $primary;
+    }
+  }
+  
+  // Update theme toggle for dark mode
+  .theme-toggle {
+    border-color: #404040;
+    color: #e5e5e5;
+    
+    &:hover {
+      background: $primary;
+      color: $white;
+      border-color: $primary;
+    }
+  }
+  
+  // Update language switcher
+  .language-btn {
+    border-color: #404040;
+    color: #e5e5e5;
+    
+    &:hover {
+      background: $primary;
+      color: $white;
+      border-color: $primary;
+    }
+  }
+}
+
+// Typography
+h1, h2, h3, h4, h5, h6 {
+  font-weight: $font-weight-semibold;
+  line-height: 1.2;
+  margin-bottom: $spacing-4;
+}
+
+h1 {
+  font-size: $font-size-4xl;
+  
+  @media (min-width: $breakpoint-md) {
+    font-size: $font-size-5xl;
+  }
+}
+
+h2 {
+  font-size: $font-size-3xl;
+  
+  @media (min-width: $breakpoint-md) {
+    font-size: $font-size-4xl;
+  }
+}
+
+h3 {
+  font-size: $font-size-2xl;
+  
+  @media (min-width: $breakpoint-md) {
+    font-size: $font-size-3xl;
+  }
+}
+
+h4 {
+  font-size: $font-size-xl;
+  
+  @media (min-width: $breakpoint-md) {
+    font-size: $font-size-2xl;
+  }
+}
+
+h5 {
+  font-size: $font-size-lg;
+  
+  @media (min-width: $breakpoint-md) {
+    font-size: $font-size-xl;
+  }
+}
+
+h6 {
+  font-size: $font-size-base;
+  
+  @media (min-width: $breakpoint-md) {
+    font-size: $font-size-lg;
+  }
+}
+
+p {
+  margin-bottom: $spacing-4;
+  color: $gray;
+}
+
+a {
+  color: $primary;
+  text-decoration: none;
+  transition: color $transition-fast;
+  
+  &:hover {
+    color: $primary-dark;
+  }
+}
+
+// Utility classes
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 $spacing-4;
+  
+  @media (min-width: $breakpoint-md) {
+    padding: 0 $spacing-6;
+  }
+  
+  @media (min-width: $breakpoint-lg) {
+    padding: 0 $spacing-8;
+  }
+}
+
+.section {
+  padding: $spacing-16 0;
+  
+  @media (min-width: $breakpoint-md) {
+    padding: $spacing-20 0;
+  }
+  
+  @media (min-width: $breakpoint-lg) {
+    padding: $spacing-24 0;
+  }
+}
+
+.section-title {
+  text-align: center;
+  margin-bottom: $spacing-12;
+  
+  h2 {
+    color: $dark;
+    margin-bottom: $spacing-4;
+  }
+  
+  p {
+    font-size: $font-size-lg;
+    color: $gray;
+    max-width: 600px;
+    margin: 0 auto;
+  }
+}
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: $spacing-3 $spacing-6;
+  font-size: $font-size-base;
+  font-weight: $font-weight-medium;
+  text-decoration: none;
+  border: none;
+  border-radius: $radius-lg;
+  cursor: pointer;
+  transition: all $transition-fast;
+  
+  &:focus {
+    outline: none;
+    box-shadow: 0 0 0 3px rgba($primary, 0.1);
+  }
+  
+  &.btn-primary {
+    background-color: $primary;
+    color: $white;
+    
+    &:hover {
+      background-color: $primary-dark;
+      transform: translateY(-1px);
+      box-shadow: $shadow-lg;
+    }
+  }
+  
+  &.btn-secondary {
+    background-color: transparent;
+    color: $primary;
+    border: 2px solid $primary;
+    
+    &:hover {
+      background-color: $primary;
+      color: $white;
+    }
+  }
+  
+  &.btn-lg {
+    padding: $spacing-4 $spacing-8;
+    font-size: $font-size-lg;
+  }
+  
+  i {
+    margin-right: $spacing-2;
+  }
+}
+
+.card {
+  background: $white;
+  border-radius: $radius-xl;
+  box-shadow: $shadow;
+  padding: $spacing-6;
+  transition: all $transition;
+  
+  &:hover {
+    transform: translateY(-2px);
+    box-shadow: $shadow-lg;
+  }
+  
+  @media (min-width: $breakpoint-md) {
+    padding: $spacing-8;
+  }
+}
+
+.grid {
+  display: grid;
+  gap: $spacing-6;
+  
+  &.grid-2 {
+    @media (min-width: $breakpoint-md) {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+  
+  &.grid-3 {
+    @media (min-width: $breakpoint-md) {
+      grid-template-columns: repeat(2, 1fr);
+    }
+    
+    @media (min-width: $breakpoint-lg) {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+  
+  &.grid-4 {
+    @media (min-width: $breakpoint-sm) {
+      grid-template-columns: repeat(2, 1fr);
+    }
+    
+    @media (min-width: $breakpoint-lg) {
+      grid-template-columns: repeat(4, 1fr);
+    }
+  }
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-primary {
+  color: $primary;
+}
+
+.text-secondary {
+  color: $secondary;
+}
+
+.text-muted {
+  color: $gray;
+}
+
+.mb-0 { margin-bottom: 0; }
+.mb-2 { margin-bottom: $spacing-2; }
+.mb-4 { margin-bottom: $spacing-4; }
+.mb-6 { margin-bottom: $spacing-6; }
+.mb-8 { margin-bottom: $spacing-8; }
+
+.mt-0 { margin-top: 0; }
+.mt-2 { margin-top: $spacing-2; }
+.mt-4 { margin-top: $spacing-4; }
+.mt-6 { margin-top: $spacing-6; }
+.mt-8 { margin-top: $spacing-8; }
+
+// Animations
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeInLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes fadeInRight {
+  from {
+    opacity: 0;
+    transform: translateX(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.fade-in-up {
+  animation: fadeInUp 0.6s ease-out;
+}
+
+.fade-in-left {
+  animation: fadeInLeft 0.6s ease-out;
+}
+
+.fade-in-right {
+  animation: fadeInRight 0.6s ease-out;
+}
+
+// Responsive utilities
+.hidden {
+  display: none;
+}
+
+@media (max-width: $breakpoint-md - 1px) {
+  .hidden-mobile {
+    display: none;
+  }
+}
+
+@media (min-width: $breakpoint-md) {
+  .hidden-desktop {
+    display: none;
+  }
+}

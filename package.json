@@ -1,0 +1,35 @@
+{
+  "name": "nikoloz-ebralidze-portfolio",
+  "version": "1.0.0",
+  "description": "Personal portfolio website for Nikoloz Ebralidze - Front-end Developer",
+  "main": "src/main.js",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "serve": "vite preview"
+  },
+  "dependencies": {
+    "vue": "^3.4.0",
+    "vue-router": "^4.2.0",
+    "vue-i18n": "^9.8.0",
+    "@vueuse/core": "^10.7.0",
+    "pinia": "^2.1.0"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-vue": "^4.5.0",
+    "vite": "^5.0.0",
+    "sass": "^1.69.0"
+  },
+  "keywords": [
+    "vue",
+    "portfolio",
+    "frontend",
+    "developer",
+    "nikoloz",
+    "ebralidze"
+  ],
+  "author": "Nikoloz Ebralidze",
+  "license": "MIT"
+}
+

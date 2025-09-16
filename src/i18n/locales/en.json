@@ -1,0 +1,74 @@
+{
+  "nav": {
+    "home": "Home",
+    "about": "About",
+    "experience": "Experience",
+    "skills": "Skills",
+    "projects": "Projects",
+    "contact": "Contact"
+  },
+  "hero": {
+    "greeting": "Hello, I'm",
+    "name": "Nikoloz Ebralidze",
+    "title": "Front-end Developer",
+    "subtitle": "Passionate about creating beautiful and functional web experiences with modern technologies like Vue.js, JavaScript, and responsive design",
+    "cta": "Get In Touch",
+    "downloadCV": "Download CV"
+  },
+  "about": {
+    "title": "About Me",
+    "subtitle": "Get to know me better",
+    "description": "I'm a passionate front-end developer with expertise in modern web technologies. I love creating user-friendly interfaces and bringing designs to life with clean, efficient code.",
+    "highlights": {
+      "experience": "Years of Experience",
+      "projects": "Projects Completed",
+      "technologies": "Technologies Mastered"
+    }
+  },
+  "experience": {
+    "title": "Work Experience",
+    "subtitle": "My professional journey",
+    "present": "Present"
+  },
+  "skills": {
+    "title": "Skills & Technologies",
+    "subtitle": "Tools and technologies I work with",
+    "categories": {
+      "frontend": "Frontend",
+      "tools": "Tools & Others",
+      "languages": "Languages"
+    }
+  },
+  "projects": {
+    "title": "Featured Projects",
+    "subtitle": "Some of my recent work",
+    "viewProject": "View Project",
+    "viewCode": "View Code"
+  },
+  "contact": {
+    "title": "Get In Touch",
+    "subtitle": "Let's work together",
+    "form": {
+      "name": "Your Name",
+      "email": "Your Email",
+      "message": "Your Message",
+      "send": "Send Message"
+    },
+    "info": {
+      "email": "Email",
+      "phone": "Phone",
+      "location": "Location"
+    }
+  },
+  "footer": {
+    "copyright": "© 2024 Nikoloz Ebralidze. All rights reserved.",
+    "builtWith": "Built with Vue.js"
+  },
+  "common": {
+    "loading": "Loading...",
+    "error": "Something went wrong",
+    "back": "Back",
+    "next": "Next",
+    "close": "Close"
+  }
+}
