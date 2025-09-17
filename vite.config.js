@@ -3,9 +3,8 @@ import vue from '@vitejs/plugin-vue'
 import { resolve } from 'path'
 
 export default defineConfig({
-  base: '/Portfolio/',
+  base: '/CV_Website/', // This matches your actual GitHub repository name
   plugins: [vue()],
-  base: '/Portfolio/', // This should match your GitHub repository name
   resolve: {
     alias: {
       '@': resolve(__dirname, 'src')
