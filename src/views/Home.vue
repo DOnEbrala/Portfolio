@@ -20,6 +20,6 @@ export default {
 
 <style lang="scss" scoped>
 .home {
-  padding-top: 70px; // Account for fixed header
+  padding-top: 70px;
 }
 </style>

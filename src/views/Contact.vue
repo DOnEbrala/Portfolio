@@ -127,7 +127,6 @@ export default {
     async submitForm() {
       this.isSubmitting = true
       
-      // Simulate form submission
       try {
         await new Promise(resolve => setTimeout(resolve, 2000))
         alert('Message sent successfully!')

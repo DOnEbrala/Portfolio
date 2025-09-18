@@ -1,6 +1,5 @@
 @import 'variables';
 
-// Reset and base styles
 * {
   margin: 0;
   padding: 0;
@@ -22,14 +21,12 @@ body {
   transition: background-color $transition, color $transition;
 }
 
-// Dark theme styles
 [data-theme="dark"] {
   body {
     background-color: #1a1a1a;
     color: #e5e5e5;
   }
   
-  // Update text colors for dark theme
   h1, h2, h3, h4, h5, h6 {
     color: #ffffff;
   }
@@ -38,19 +35,16 @@ body {
     color: #b3b3b3;
   }
   
-  // Update card backgrounds
   .card {
     background: #2d2d2d;
     color: #e5e5e5;
   }
   
-  // Update header
   .header {
     background: rgba(26, 26, 26, 0.95);
     border-bottom: 1px solid rgba(255, 255, 255, 0.1);
   }
   
-  // Update navigation links
   .nav-link {
     color: #e5e5e5;
     
@@ -60,7 +54,6 @@ body {
     }
   }
   
-  // Update form elements
   input,
   textarea {
     background: #2d2d2d;
@@ -76,7 +69,6 @@ body {
     }
   }
   
-  // Update project cards
   .project-card {
     background: #2d2d2d;
     
@@ -91,7 +83,6 @@ body {
     }
   }
   
-  // Update stat cards
   .stat-card {
     background: #2d2d2d;
     
@@ -104,7 +95,6 @@ body {
     }
   }
   
-  // Update skill cards
   .skill-card {
     background: #2d2d2d;
     
@@ -113,7 +103,6 @@ body {
     }
   }
   
-  // Update timeline content
   .timeline-content {
     background: #2d2d2d;
     
@@ -136,17 +125,14 @@ body {
     }
   }
   
-  // Update contact form
   .contact-form-wrapper {
     background: #2d2d2d;
   }
   
-  // Update footer
   .footer {
     background: #111111;
   }
   
-  // Update filter buttons
   .filter-btn {
     border-color: #404040;
     color: #b3b3b3;
@@ -159,7 +145,6 @@ body {
     }
   }
   
-  // Update theme toggle for dark mode
   .theme-toggle {
     border-color: #404040;
     color: #e5e5e5;
@@ -171,7 +156,6 @@ body {
     }
   }
   
-  // Update language switcher
   .language-btn {
     border-color: #404040;
     color: #e5e5e5;
@@ -184,7 +168,6 @@ body {
   }
 }
 
-// Typography
 h1, h2, h3, h4, h5, h6 {
   font-weight: $font-weight-semibold;
   line-height: 1.2;
@@ -254,7 +237,6 @@ a {
   }
 }
 
-// Utility classes
 .container {
   max-width: 1200px;
   margin: 0 auto;
@@ -424,7 +406,6 @@ a {
 .mt-6 { margin-top: $spacing-6; }
 .mt-8 { margin-top: $spacing-8; }
 
-// Animations
 @keyframes fadeInUp {
   from {
     opacity: 0;
@@ -470,7 +451,6 @@ a {
   animation: fadeInRight 0.6s ease-out;
 }
 
-// Responsive utilities
 .hidden {
   display: none;
 }

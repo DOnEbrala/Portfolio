@@ -3,7 +3,7 @@ import vue from '@vitejs/plugin-vue'
 import { resolve } from 'path'
 
 export default defineConfig({
-  base: '/Portfolio/', // This matches your GitHub Pages repository name
+  base: '/Portfolio/',
   plugins: [vue()],
   resolve: {
     alias: {

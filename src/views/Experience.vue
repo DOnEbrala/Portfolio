@@ -11,7 +11,6 @@
     
     <section class="section">
       <div class="container">
-        <!-- Work Experience Section -->
         <div class="experience-section">
           <h2 class="section-subtitle">Work Experience</h2>
           <div class="timeline">
@@ -46,7 +45,6 @@
           </div>
         </div>
 
-        <!-- Education Section -->
         <div class="education-section">
           <h2 class="section-subtitle">Education</h2>
           <div class="timeline">
@@ -71,7 +69,6 @@
           </div>
         </div>
 
-        <!-- Certificates Section -->
         <div class="certificates-section">
           <h2 class="section-subtitle">Certificates & Training</h2>
           <div class="timeline">
@@ -96,7 +93,6 @@
           </div>
         </div>
 
-        <!-- Skills & Languages -->
         <div class="skills-languages-section">
           <h2 class="section-subtitle">Additional Skills & Languages</h2>
           <div class="skills-grid">
@@ -396,7 +392,6 @@ export default {
   border-radius: $radius-full;
 }
 
-// Section spacing
 .experience-section,
 .education-section,
 .certificates-section,
@@ -419,7 +414,6 @@ export default {
   }
 }
 
-// Additional job info styles
 .location,
 .department,
 .level,
@@ -438,16 +432,14 @@ export default {
   }
 }
 
-// Different marker colors for sections
 .education-marker {
   background: $secondary;
 }
 
 .certificate-marker {
-  background: #10b981; // Green color for certificates
+  background: #10b981;
 }
 
-// Skills and Languages section
 .skills-grid {
   display: grid;
   gap: $spacing-8;
@@ -493,7 +485,6 @@ export default {
   }
 }
 
-// Language skills specific styling
 .language-skills {
   display: flex;
   flex-direction: column;

@@ -224,7 +224,6 @@ export default {
   }
 }
 
-// Animation delays for staggered effect
 .fade-in-up {
   opacity: 0;
   animation: fadeInUp 0.8s ease-out forwards;
